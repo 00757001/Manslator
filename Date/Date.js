@@ -121,7 +121,7 @@ $(document).ready(function() {
                 }, 3000)
                 var right = '#' + answer;
                 $(right).delay(3500).effect("bounce", "slow");
-                $(right).animate({ fontSize: "20px" }, 1000);
+                $(right).animate({ fontSize: "2vw" }, 1000);
             } else if (click < 3) {
                 click++;
                 $("#modal4").modal({});
