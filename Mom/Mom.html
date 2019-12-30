@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="Content.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="autoBackgroundScroll.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <script src="Content.js"></script>
+
+</head>
+
+<body>
+    <div style="display:none;" id="modal1">
+        <div style="font-size: 40px;">
+            正確回答!!
+            <br> 感情升溫♥
+        </div>
+        <button class="learn-more" action="action" onclick="window.location.reload();">往下一關</button>
+    </div>
+    <div style="display:none;" id="modal2">
+        <div style="font-size: 40px;">
+            錯誤回答!!!
+        </div style="font-size: 40px;">
+        <button class="learn-more" action="action" onclick="window.history.go(-2); return false;">回到主頁</button>
+    </div>
+    <div style="display:none;" id="modal3">
+        <div style="font-size: 40px;">
+            恭喜過關
+            <br>
+            <img src="https://imgur.com/oa6y1vp.png" width="30%" id="man">
+            <img src="https://imgur.com/k6Swijt.png" width="30%" id="superman">
+            <img src="https://imgur.com/7h4iQNq.gif" width="70%" id="firework1">
+            <img src="https://imgur.com/7h4iQNq.gif" width="70%" id="firework2">
+        </div>
+        <br><br><br><br><br>
+        <button class="learn-more" action="action" onclick="window.history.go(-2); return false;">回到主頁</button>
+    </div>
+    <div id="div_chat">
+        <h1 id="clickstart"></h1>
+        <div class="message" id="mes1">
+            <img src="https://imgur.com/NktMGml.png" width="12%" style="float:left;">
+            <div class="bubble_left">
+                <div class="wave" id="w1">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+                <span class="content" id="c1">              
+                </span>
+            </div>
+        </div>
+        <div class="message" id="mes2">
+            <img src="https://imgur.com/AtzFDtF.png" width="12%" style="float:right;">
+            <div class="bubble_right">
+                <div class="wave" id="w2" style="left:70%;">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+                <span class="content" id="c2">
+                </span>
+            </div>
+        </div>
+        <div class="message" id="mes3">
+            <img src="https://imgur.com/NktMGml.png" width="12%" style="float:left;">
+            <div class="bubble_left">
+                <div class="wave" id="w3">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+                <span class="content" id="c3">
+                    
+                </span>
+            </div>
+        </div>
+        <div class="message" id="mes4">
+            <img src="https://imgur.com/AtzFDtF.png" width="12%" style="float:right;">
+            <div class="bubble_right">
+                <div class="wave" id="w4" style="left:70%;">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+                <span class="content" id="c4">
+                    
+                </span>
+            </div>
+        </div>
+        <div class="message" id="mes5">
+            <img src="https://imgur.com/NktMGml.png" width="12%" style="float:left;">
+            <div class="bubble_left">
+                <div class="wave" id="w5">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+                <span class="content" id="c5">
+                    
+                </span>
+            </div>
+        </div>
+        <div class="message" id="mes6">
+            <img src="https://imgur.com/AtzFDtF.png" width="12%" style="float:right;">
+            <div class="bubble_right">
+                <div class="wave" id="w6" style="left:70%;">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+                <span class="content" id="c6">
+                    <!--最後答案-->
+                </span>
+            </div>
+        </div>
+    </div>
+    <div id="question">
+        <div id="q_text">
+            <!--問題-->
+        </div>
+        <h2 class="title">翻譯中</h2>
+        <div class="barras">
+            <div class="barra">
+                <div class="barra-nivel" data-nivel="100%"></div>
+            </div>
+        </div>
+        <div id="div_manslator">
+            <span>試試看翻譯機</span><br>
+            <img src="https://imgur.com/ucIsyfv.png" id="manslator" width="20%">
+        </div>
+    </div>
+    <div id="select1" class="select">
+        <button class="learn-more" id="A"></button>
+        <br>
+        <br>
+    </div>
+    <div id="select2" class="select">
+        <button class="learn-more" id="B"></button>
+        <br>
+        <br>
+    </div>
+    <div id="select3" class="select">
+        <button class="learn-more" id="C"></button>
+    </div>
+    <div id="modal4" style="display: none;font-size: 20px; background-color: palevioletred;">
+        <img src="https://imgur.com/NktMGml.png" width="50%"> 還想耍賴啊!!!
+    </div>
+    <div id="modal5" style="display: none; background-color: red; font-size: 20px;">
+        好啦爛咖!!!
+    </div>
+</body>
+
+</html>
