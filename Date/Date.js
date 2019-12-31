@@ -1,4 +1,5 @@
 $(document).ready(function() {
+    var x = document.getElementById("send");
     //-------background----------------------
     $('body').autoBackgroundScroll({
         speed: 0.3,
@@ -55,6 +56,7 @@ $(document).ready(function() {
                     window.setTimeout(function() {
                         $("#w1").hide("fade", "fast");
                         $("#c1").show("slide");
+                         x.play();
                     }, 2000);
                 });
             });
@@ -65,6 +67,7 @@ $(document).ready(function() {
                 window.setTimeout(function() {
                     $("#w2").hide("fade", "fast");
                     $("#c2").show("slide", { direction: "right" });
+                     x.play();
                 }, 1500);
             });
         });
@@ -74,6 +77,7 @@ $(document).ready(function() {
                 window.setTimeout(function() {
                     $("#w3").hide("fade", "fast");
                     $("#c3").show("slide");
+                     x.play();
                 }, 1500);
             });
         });
@@ -83,6 +87,7 @@ $(document).ready(function() {
                 window.setTimeout(function() {
                     $("#w4").hide("fade", "fast");
                     $("#c4").show("slide", { direction: "right" });
+                     x.play();
                 }, 1500);
             });
         });
@@ -92,6 +97,7 @@ $(document).ready(function() {
                 window.setTimeout(function() {
                     $("#w5").hide("fade", "fast");
                     $("#c5").show("slide");
+                     x.play();
                 }, 1500);
             });
         });
@@ -144,6 +150,7 @@ $(document).ready(function() {
                         window.setTimeout(function() {
                             $("#w6").hide("fade", "fast");
                             $("#c6").show("slide", { direction: "right" });
+                             x.play();
                             window.setTimeout(function() {
                                 if (choose == answer && localStorage['count'] != 3) { //json answer
                                     $('#modal1').modal({
