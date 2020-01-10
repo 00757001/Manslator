@@ -1,5 +1,6 @@
 $(document).ready(function() {
     var x = document.getElementById("send");
+    var fail = document.getElementById("fail");
     //-------background----------------------
     $('body').autoBackgroundScroll({
         speed: 0.3,
@@ -178,7 +179,8 @@ $(document).ready(function() {
                                         fadeDuration: 1000,
                                         fadeDelay: 0.50
                                     });
-                                    window.setTimeout(function() { window.history.go(-2); }, 3000);
+                                    window.setTimeout(function() { fail.play(); }, 1200);
+                                    window.setTimeout(function() { window.history.go(-2); }, 6000);
                                 }
                             }, 1000);
                         }, 1500);
