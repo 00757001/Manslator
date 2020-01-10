@@ -40,7 +40,8 @@ $(document).ready(function() {
             $('#B').html(field[choice][7]);
             $('#C').html(field[choice][8]);
             answer = field[choice][9];
-            console.log(answer);
+            var showans = '#'+answer;
+            console.log($(showans).html());
         });
     });
     //credit
@@ -49,7 +50,7 @@ $(document).ready(function() {
         //---------------chat_part--------------------------
         var current = 1000;
         var speed = 3000;
-        console.log($('#c1').html());
+        //console.log($('#c1').html());
         if ($('#c1').html() != "EOF") {
             $("#mes1").delay(current).show('slide', 2000, function() {
                 $("#w1").show("fade", "fast", function() {
