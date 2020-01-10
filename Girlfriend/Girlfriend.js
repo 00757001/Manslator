@@ -179,7 +179,7 @@ $(document).ready(function() {
                                         fadeDelay: 0.50
                                     });
                                     window.setTimeout(function() { fail.play(); }, 1200);
-                                    window.setTimeout(function() { window.history.go(-2); }, 3000);
+                                    window.setTimeout(function() { window.history.go(-2); }, 6000);
                                 }
                             }, 1000);
                         }, 1500);
