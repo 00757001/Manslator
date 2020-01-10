@@ -179,8 +179,8 @@ $(document).ready(function() {
                                         fadeDuration: 1000,
                                         fadeDelay: 0.50
                                     });
-                                    fail.play();
-                                    window.setTimeout(function() { window.history.go(-2); }, 5000);
+                                    window.setTimeout(function() { fail.play(); }, 1200);
+                                    window.setTimeout(function() { window.history.go(-2); }, 6000);
                                 }
                             }, 1000);
                         }, 1500);
