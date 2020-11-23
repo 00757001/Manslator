@@ -23,7 +23,7 @@ $(document).ready(function() {
     //---------------getJson-----------------
     var choice;
     var answer;
-    $.getJSON("https://github.com/00757001/Manslator/blob/master/Date/Date.json", function(result) {
+    $.getJSON("Date.json", function(result) {
         $.each(result, function(i, field) {
             stageArray = localStorage['stage'].split('');
             choice = Math.floor(Math.random() * field.length);
