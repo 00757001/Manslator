@@ -23,7 +23,7 @@ $(document).ready(function() {
     //---------------getJson-----------------
     var choice;
     var answer;
-    $.getJSON("https://api.myjson.com/bins/19jpw8", function(result) {
+    $.getJSON("Mom.json", function(result) {
         $.each(result, function(i, field) {
             stageArray = localStorage['stage'].split('');
             choice = Math.floor(Math.random() * field.length);
